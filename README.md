@@ -1,1 +1,1 @@
-# jb-portfolio-nextjs
+# ethan-portfolio-starter
