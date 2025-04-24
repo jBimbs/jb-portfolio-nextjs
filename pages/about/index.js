@@ -129,9 +129,11 @@ export const aboutData = [
       },
       {
         title: 'I love to',
-        stage: 'Play a guitar',
-        stage: 'Draw and Sketch',
-        stage: 'Play online games(Valorant & League Of Legends)',
+        stage: [
+          'Play a guitar, ',
+          'Draw and Sketch, ',
+          'Play online games (Valorant & League Of Legends)',
+        ],
       },
       {
         title: 'Business Owner',
@@ -204,7 +206,7 @@ const About = () => {
         animate='show'
         exit='hidden'
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-        3 years ago, I took my first steps into the world of Computer Science wide-eyed, curious, and slightly intimidated by the sea of code, algorithms, and complex theories ahead of me. What began as a challenge soon became a passion, as I discovered the thrill of solving problems, the creativity behind software design, and the endless possibilities of technology.
+        {"3 years ago, I took my first steps into the world of Computer Science wide-eyed, curious, and slightly intimidated by the sea of code, algorithms, and complex theories ahead of me. What began as a challenge soon became a passion, as I discovered the thrill of solving problems, the creativity behind software design, and the endless possibilities of technology."}
         </motion.p>
         {/* counters */}
         <motion.div 
@@ -269,50 +271,58 @@ const About = () => {
         </div>
         
         <div className="bg-[#282f38] py-4 xl:py-8 px-4 rounded-lg flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-          {aboutData[index].info.map((item, itemIndex) => {
-            if (aboutData[index].title === 'skills') {
-              //  skill cards
-              return (
-                <div key={itemIndex} className="w-full">
-                  <h3 className="text-[#ff4654] text-lg font-bold mb-4 text-center xl:text-left">
-                    {item.title}
-                  </h3>
-                  <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    {item.icons.map((icon, iconIndex) => (
-                      <motion.div
-                        key={iconIndex}
-                        className="bg-[#1e232b] p-4 rounded-lg shadow-md flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-                        whileHover={{
-                          scale: 1.05,
-                          boxShadow: "0px 5px 15px rgba(255, 70, 84, 0.3)"
-                        }}
-                      >
-                        <div className="text-3xl mb-2 text-white">
-                          {icon}
-                        </div>
-                        <span className="text-xs text-white/80 capitalize">
-                          {getIconName(icon)}
-                        </span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              );
-            } else {
-              // OTHER SECTIONS
-              return (
-                <div key={itemIndex} className="flex-1 flex-col flex md:flex-row max-w-max gap-x-2 items-center text-white/60">
-                  <div className="font-bold text-[#ff4654] mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">
-                    {aboutData[index].title === 'about' ? ':' : '-'}
-                  </div>
-                  <div className="hidden md:flex">
-                    {item.stage}
-                  </div>
-                </div>
-              );
-            }
-          })}
+        {aboutData[index].info.map((item, itemIndex) => {
+  if (aboutData[index].title === 'skills') {
+    // SKILLS section logic remains the same
+    return (
+      <div key={itemIndex} className="w-full">
+        <h3 className="text-[#ff4654] text-lg font-bold mb-4 text-center xl:text-left">
+          {item.title}
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {item.icons.map((icon, iconIndex) => (
+            <motion.div
+              key={iconIndex}
+              className="bg-[#1e232b] p-4 rounded-lg shadow-md flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 5px 15px rgba(255, 70, 84, 0.3)"
+              }}
+            >
+              <div className="text-3xl mb-2 text-white">
+                {icon}
+              </div>
+              <span className="text-xs text-white/80 capitalize">
+                {getIconName(icon)}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    );
+  } else {
+    // Non-skills section (e.g., about, school, fun facts, etc.)
+    return (
+      <div
+        key={itemIndex}
+        className="flex-1 flex-col flex md:flex-row max-w-max gap-x-2 items-center text-white/60"
+      >
+        <div className="font-bold text-[#ff4654] mb-2 md:mb-0">{item.title}</div>
+        <div className="hidden md:flex">
+          {aboutData[index].title === 'about' ? ':' : '-'}
+        </div>
+        <div className="hidden md:flex flex-col">
+          {Array.isArray(item.stage) ? (
+            item.stage.map((line, i) => <div key={i}>{line}</div>)
+          ) : (
+            <div>{item.stage}</div>
+          )}
+        </div>
+      </div>
+    );
+  }
+})}
+
         </div>
       </motion.div>
     </div>
