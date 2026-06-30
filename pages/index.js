@@ -38,10 +38,10 @@ const Home = () => {
         initial="hidden" 
         animate="show" 
         exit="hidden"
-        className='h1'> Santillan, <br /> John Benjamin{' '} <br/><span className='text-[#ff4654]'>BSCS Student</span>
+        className='h1'> Santillan, <br /> John Benjamin{' '} <br/><span className='text-[#ff4654]'>BS Computer Science</span>
         </motion.h1>
         {/* subtitle */}
-        <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'> An aspiring 3rd Year BSCS student | Full-stack enthusiast | Turning algorithms into applications. Building the future, one line of code at a time.</motion.p>
+        <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'> An aspiring BSCS graduate | Turning algorithms into applications. Building the future, one line of code at a time.</motion.p>
         {/* NEW SECONDARY BUTTON - UPDATED STYLE */}
         <motion.div
             variants={fadeIn('down', 0.4)}

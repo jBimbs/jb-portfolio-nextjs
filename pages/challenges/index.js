@@ -2,6 +2,7 @@
 import Circles from "../../components/Circles";
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image'; // Imported Next.js Image component
 
 // data
 export const challengesData = [
@@ -37,7 +38,6 @@ export const challengesData = [
         title: 'Workload',
         stage: 'Computer Science courses like Computer Programming, Algorithms and Operating Systems demanded intense effort. To manage, I balanced my semester workload, pairing difficult subjects with lighter electives.',
       },
-      
     ],
   },
 ];
@@ -141,10 +141,13 @@ const Challenges = () => {
           className="w-full container mx-auto mt-16 px-4 flex flex-col items-center"
         >
           <h2 className="text-4xl text-[#ff4654] font-bold mb-8">Key Learnings</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full pb-16">
+            
             {/* Technical Skills */}
             <div className="bg-[#282f38] p-6 rounded-lg flex flex-col items-center text-center shadow-lg">
-              <div className="text-4xl mb-4">🖥️</div>
+              <div className="w-12 h-12 mb-4 relative flex items-center justify-center">
+                <Image src="/technical-skills.png" alt="Technical Skills" width={48} height={48} className="object-contain" />
+              </div>
               <h3 className="text-xl text-[#ff4654] font-semibold mb-2">Technical Skills</h3>
               <p className="text-white/70 text-sm">
                 The importance of writing clean, maintainable code and how proper documentation saves time in the long run.
@@ -153,7 +156,9 @@ const Challenges = () => {
 
             {/* Teamwork */}
             <div className="bg-[#282f38] p-6 rounded-lg flex flex-col items-center text-center shadow-lg">
-              <div className="text-4xl mb-4">👥</div>
+              <div className="w-12 h-12 mb-4 relative flex items-center justify-center">
+                <Image src="/teamwork.png" alt="Teamwork" width={48} height={48} className="object-contain" />
+              </div>
               <h3 className="text-xl text-[#ff4654] font-semibold mb-2">Teamwork</h3>
               <p className="text-white/70 text-sm">
                 How effective communication and collaboration can make or break a project's success.
@@ -162,7 +167,9 @@ const Challenges = () => {
 
             {/* Problem Solving */}
             <div className="bg-[#282f38] p-6 rounded-lg flex flex-col items-center text-center shadow-lg">
-              <div className="text-4xl mb-4">🧩</div>
+              <div className="w-12 h-12 mb-4 relative flex items-center justify-center">
+                <Image src="/problem-solving.png" alt="Problem Solving" width={48} height={48} className="object-contain" />
+              </div>
               <h3 className="text-xl text-[#ff4654] font-semibold mb-2">Problem Solving</h3>
               <p className="text-white/70 text-sm">
                 Breaking down complex problems into smaller, manageable parts leads to better solutions.
@@ -171,12 +178,15 @@ const Challenges = () => {
 
             {/* Personal Growth */}
             <div className="bg-[#282f38] p-6 rounded-lg flex flex-col items-center text-center shadow-lg">
-              <div className="text-4xl mb-4">🌱</div>
+              <div className="w-12 h-12 mb-4 relative flex items-center justify-center">
+                <Image src="/Personal-growth.png" alt="Personal Growth" width={48} height={48} className="object-contain" />
+              </div>
               <h3 className="text-xl text-[#ff4654] font-semibold mb-2">Personal Growth</h3>
               <p className="text-white/70 text-sm">
                 The value of persistence and how failure is often just a stepping stone to success.
               </p>
             </div>
+
           </div>
         </motion.div>
       </div>

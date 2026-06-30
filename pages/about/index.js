@@ -36,7 +36,7 @@ export const aboutData = [
       },
       {
         title: 'Age',
-        stage: '22',
+        stage: '23',
       },
       {
         title: 'Birthdate',
@@ -90,11 +90,11 @@ export const aboutData = [
     info: [
       {
         title: 'Cavite State University - Bacoor Campus(Bachelor Of Science In Computer Science)',
-        stage: '2022 - PRESENT',
+        stage: '2022 - 2026',
       },
       {
         title: 'Informatics College - Northgate Alabang(ICT Programming)',
-        stage: '2009 - 2010',
+        stage: '2019 - 2021',
       },
     ],
   },
@@ -102,8 +102,8 @@ export const aboutData = [
     title: 'Trainings',
     info: [
       {
-        title: 'UNESCO IT Basic Training - Adamson University',
-        stage: '2016 - 2017',
+        title: 'On-The-Job Training: Junior Developer Intern | Intercommerce Network Services Inc.',
+        stage: 'July 2025 - September 2025',
       },
     ],
   },
@@ -111,36 +111,20 @@ export const aboutData = [
     title: 'Awards',
     info: [
       {
-        title: 'Grade 11 and Grade 12 - Informatics College Northgate Alabang',
-        stage: 'Consecutively With Honors',
+        title: 'Best in Thesis Poster | Cavite State University Don Severino Delas Alas Campus Symposium 2026  ',
+        stage: 'May 2026',
       },
       {
-        title: '1st Year to PRESENT - Cavite State University Bacoor Campus',
-        stage: "Consecutively Dean's Lister",
+        title: 'Informatics College Northgate Alabang: ICT Strand | Grade 11 - 12  ',
+        stage: 'With Honors',
+      },
+      {
+        title: 'Cavite State University Bacoor Campus | 1st - 4th Year',
+        stage: "Dean's Lister",
       },
     ],
   },
-  {
-    title: 'fun facts',
-    info: [
-      {
-        title: 'Favourite Filipino Dish',
-        stage: 'Sinigang',
-      },
-      {
-        title: 'I love to',
-        stage: [
-          'Play a guitar, ',
-          'Draw and Sketch, ',
-          'Play online games (Valorant & League Of Legends)',
-        ],
-      },
-      {
-        title: 'Business Owner',
-        stage: 'Boba Haus',
-      },
-    ],
-  },
+
 ];
 
 
@@ -199,14 +183,14 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="h2">Algorithms to <span className="text-[#ff4654]">Aesthetics</span> My Journey in Computer Science</motion.h2>
+        className="h2">Algorithms to <span className="text-[#ff4654]">Aesthetics</span>, My Journey in Computer Science</motion.h2>
         <motion.p 
         variants={fadeIn('right', 0.4)}
         initial='hidden'
         animate='show'
         exit='hidden'
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-        {"3 years ago, I took my first steps into the world of Computer Science wide-eyed, curious, and slightly intimidated by the sea of code, algorithms, and complex theories ahead of me. What began as a challenge soon became a passion, as I discovered the thrill of solving problems, the creativity behind software design, and the endless possibilities of technology."}
+        {"4 years ago, I took my first steps into the world of Computer Science wide-eyed, curious, and slightly intimidated by the sea of code, algorithms, and complex theories ahead of me. What began as a challenge soon became a passion, as I discovered the thrill of solving problems, the creativity behind software design, and the endless possibilities of technology."}
         </motion.p>
         {/* counters */}
         <motion.div 
@@ -219,21 +203,15 @@ const About = () => {
 
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">            <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={3} duration={5} />+
+              <CountUp start={0} end={4} duration={5} />
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years of Experience</div>
             </div>
 
-            {/* clients */}
-            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">            <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={6} duration={5} />+
-            </div>
-            <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied Clients</div>
-            </div>
 
             {/* projects */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">            <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={6} duration={5} />+
+              <CountUp start={0} end={4} duration={5} />+
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Finished Projects</div>
             </div>
@@ -241,7 +219,7 @@ const About = () => {
             {/* awards */}
             <div className="relative flex-1">
               <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={5} duration={5} />+
+              <CountUp start={0} end={1} duration={5} />+
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Winning Awards</div>
             </div>
