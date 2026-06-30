@@ -2,7 +2,7 @@
 import Circles from "../../components/Circles";
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Image from 'next/image'; // Imported Next.js Image component
+import Image from 'next/image';
 
 // data
 export const challengesData = [
@@ -24,7 +24,7 @@ export const challengesData = [
     ],
   },
   {
-    title: "How I've Overcame it",
+    title: "How I've Overcame it", // Using double quotes safely bypasses the single quote lint rule here
     info: [
       {
         title: 'Time Management',
@@ -161,7 +161,7 @@ const Challenges = () => {
               </div>
               <h3 className="text-xl text-[#ff4654] font-semibold mb-2">Teamwork</h3>
               <p className="text-white/70 text-sm">
-                How effective communication and collaboration can make or break a project's success.
+                How effective communication and collaboration can make or break a project&apos;s success. {/* Escaped apostrophe here */}
               </p>
             </div>
 
