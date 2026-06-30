@@ -41,7 +41,7 @@ const Home = () => {
         className='h1'> Santillan, <br /> John Benjamin{' '} <br/><span className='text-[#ff4654]'>BS Computer Science</span>
         </motion.h1>
         {/* subtitle */}
-        <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'> An aspiring BSCS graduate | Turning algorithms into applications. Building the future, one line of code at a time.</motion.p>
+        <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>Turning algorithms into applications. Building the future, one line of code at a time.</motion.p>
         {/* NEW SECONDARY BUTTON - UPDATED STYLE */}
         <motion.div
             variants={fadeIn('down', 0.4)}
@@ -65,7 +65,7 @@ const Home = () => {
     
     {/* Resume Download button */}
     <a 
-      href="/RESUME.pdf"
+      href="/Resume.pdf"
       download = "Santillan_John_Benjamin_Resume"
       className="px-6 py-3 text-white hover:bg-[#ff4654] transition-all duration-300 flex items-center gap-2"
     >

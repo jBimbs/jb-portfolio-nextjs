@@ -211,7 +211,7 @@ const About = () => {
 
             {/* projects */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">            <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={4} duration={5} />+
+              <CountUp start={0} end={4} duration={5} />
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Finished Projects</div>
             </div>
@@ -219,9 +219,9 @@ const About = () => {
             {/* awards */}
             <div className="relative flex-1">
               <div className="text-2xl xl:text-4xl font-extrabold text-[#ff4654] mb-2 ">
-              <CountUp start={0} end={1} duration={5} />+
+              <CountUp start={0} end={1} duration={5} />
             </div>
-            <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Winning Awards</div>
+            <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Winning Award</div>
             </div>
           </div>
         </motion.div>
@@ -270,9 +270,6 @@ const About = () => {
               <div className="text-3xl mb-2 text-white">
                 {icon}
               </div>
-              <span className="text-xs text-white/80 capitalize">
-                {getIconName(icon)}
-              </span>
             </motion.div>
           ))}
         </div>

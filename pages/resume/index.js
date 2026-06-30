@@ -9,7 +9,7 @@ const Services = () => {
   // Function to handle download
   const handleDownload = () => {
     // Replace with your actual resume file path
-    const resumeUrl = '/path/to/your/resume.pdf';
+    const resumeUrl = '/Resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'John_Santillan_Resume.pdf';
@@ -135,11 +135,15 @@ const Services = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-yellow-300 mr-2">•</span>
-                    <span>Consistent Dean&apos;s Lister at Cavite State University</span>
+                    <span>Best in Thesis Poster | Cavite State University Don Severino Delas Alas Campus Symposium 2026</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-yellow-300 mr-2">•</span>
-                    <span>Academic Excellence Award in Senior High School</span>
+                    <span>Dean&apos;s Lister | Cavite State University</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 mr-2">•</span>
+                    <span>Academic Excellence Award | Senior High School</span>
                   </li>
                 </ul>
               </div>

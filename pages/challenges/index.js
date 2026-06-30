@@ -36,7 +36,7 @@ export const challengesData = [
       },
       {
         title: 'Workload',
-        stage: 'Computer Science courses like Computer Programming, Algorithms and Operating Systems demanded intense effort. To manage, I balanced my semester workload, pairing difficult subjects with lighter electives.',
+        stage: 'Computer Science courses like computer programming, algorithms demanded intense effort. To manage, I balanced my workload, pairing difficult tasks with lighter electives.',
       },
     ],
   },
