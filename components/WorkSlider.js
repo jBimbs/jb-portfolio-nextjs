@@ -68,7 +68,7 @@ const workSlides = {
           title: 'CvSU - Bacoor Website',
           path: '/CVSU.png',
           subImages: ['/project1slider1.jpg', '/project1slider2.jpg', '/project1slider3.jpg'],
-          description: 'Official website for Cavite State University - Bacoor Campus featuring information about programs, faculty, and campus events. Built with WordPress for easy content management.',
+          description: 'Official website for Cavite State University - Bacoor Campus featuring information about programs, faculty, and campus events.',
           github: 'https://github.com/jBimbs/Collection/tree/main/CVSU',
           hasLiveDemo: false
         },
@@ -80,7 +80,7 @@ const workSlides = {
           title: 'Batang Kalye Admin System',
           path: '/adminsystem.jpg',
           subImages: ['/project5slider1.jpg', '/project5slider2.jpg', '/project5slider3.jpg'],
-          description: 'Inventory management dashboard software for small businesses equipped with real-time stock tracking, mutation logs, and system reporting features.',
+          description: 'Inventory management dashboard software for a small equipped with real-time stock tracking, mutation logs, and system reporting features.',
           github: 'https://github.com/jBimbs/Collection/tree/main/BatangKalye',
           hasLiveDemo: false
         },
