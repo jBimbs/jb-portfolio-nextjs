@@ -42,7 +42,7 @@ const Home = () => {
         </motion.h1>
         {/* subtitle */}
         <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>Turning algorithms into applications. Building the future, one line of code at a time.</motion.p>
-        {/* NEW SECONDARY BUTTON - UPDATED STYLE */}
+
         <motion.div
             variants={fadeIn('down', 0.4)}
             initial="hidden"
@@ -50,7 +50,7 @@ const Home = () => {
             exit="hidden"
             className="flex flex-col xl:flex-row gap-4 mb-10 xl:mb-16 justify-center xl:justify-start"
           >
-            {/* Combined button group */}
+
   <div className="inline-flex items-center rounded-full border border-white/20 bg-white/5 overflow-hidden">
     {/* About Me button */}
     <a 
